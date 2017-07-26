@@ -227,6 +227,7 @@ function twentyfifteen_scripts() {
 	}
 
 	wp_enqueue_script('tinypass', get_template_directory_uri(). '/js/tinypass.js');
+
 	$tp_tags = wp_get_post_tags(get_the_id());
 	wp_localize_script('tinypass', 'php_vars', $tp_tags);
 
@@ -237,6 +238,16 @@ function twentyfifteen_scripts() {
 	) );
 }
 add_action( 'wp_enqueue_scripts', 'twentyfifteen_scripts' );
+
+function tinypass_script(){
+	wp_enqueue_script('tinypass', get_template_directory_uri(). '/js/tinypass.js');
+
+	$tp_tags = wp_get_post_tags(get_the_id());
+	wp_localize_script('tinypass', 'php_vars', $tp_tags);
+}
+
+
+add_action( 'wp_enqueue_scripts', 'tinypass_script');
 
 /**
  * Add featured image as background image to post navigation elements.
