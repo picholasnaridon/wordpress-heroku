@@ -15,15 +15,15 @@ for (i = 0; i < php_vars.length; i++) {
 
 tp.push(["setTags", array]);
 
-// 
-// tp.push(["init", function(){
-//       if (tp.pianoId.isUserValid()) {
-//         $("#menu-item-5").hide()
-//         $("#menu-item-7").hide()
-//       } else {
-//         $("#menu-item-6").hide()
-//       }
-//     }])
+
+tp.push(["init", function(){
+      if (tp.pianoId.isUserValid()) {
+        $("#menu-item-5").hide();
+        $("#menu-item-7").hide();
+      } else {
+        $("#menu-item-6").hide();
+      }
+    }])
 
 
       tp.push(["init", function(){
