@@ -18,16 +18,16 @@ tp.push(["setTags", array]);
 
 tp.push(["init", function(){
       if (tp.pianoId.isUserValid()) {
-        $("#menu-item-29").hide()
-        $("#menu-item-31").hide()
+        $("#menu-item-5").hide()
+        $("#menu-item-7").hide()
       } else {
-        $("#menu-item-30").hide()
+        $("#menu-item-6").hide()
       }
     }])
 
 
       tp.push(["init", function(){
-        document.getElementById('menu-item-29').onclick = function() {
+        document.getElementById('menu-item-5').onclick = function() {
           tp.pianoId.show({
             screen: 'login',
             displayMode: 'modal',
@@ -38,7 +38,7 @@ tp.push(["init", function(){
           }
         }])
         tp.push(["init", function(){
-          document.getElementById('menu-item-31').onclick = function() {
+          document.getElementById('menu-item-7').onclick = function() {
             tp.pianoId.show({
               screen: 'register',
               displayMode: 'modal',
@@ -50,7 +50,7 @@ tp.push(["init", function(){
           }])
 
         tp.push( ["init", function() {
-          document.getElementById('menu-item-30').onclick = function(){
+          document.getElementById('menu-item-6').onclick = function(){
             tp.pianoId.logout();
               location.reload();
             }
