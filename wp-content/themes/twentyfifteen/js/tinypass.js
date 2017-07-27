@@ -18,10 +18,10 @@ tp.push(["setTags", array]);
 
 tp.push(["init", function(){
       if (tp.pianoId.isUserValid()) {
-        jQuery("#menu-item-5").hide();
-        jQuery("#menu-item-7").hide();
+        jQuery("#menu-item-5").hide(); //login
+        jQuery("#menu-item-7").hide(); //signup
       } else {
-        jQuery("#menu-item-6").hide();
+        jQuery("#menu-item-6").hide(); //logout
       }
     }])
 
