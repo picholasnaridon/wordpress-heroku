@@ -22,6 +22,7 @@ tp.push(["init", function(){
         jQuery("#menu-item-6").hide(); //signup
       } else {
         jQuery("#menu-item-5").hide(); //logoutdsfsfsdfd
+        console.log("test")
       }
     }])
 
