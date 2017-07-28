@@ -21,7 +21,7 @@ tp.push(["init", function(){
         jQuery("#menu-item-4").hide(); //login
         jQuery("#menu-item-6").hide(); //signup
       } else {
-        jQuery("#menu-item-5").hide(); //logoutdsfs
+        jQuery("#menu-item-5").hide(); //logoutdsfsfsdfd
       }
     }])
 
