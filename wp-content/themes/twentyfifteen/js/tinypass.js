@@ -18,16 +18,16 @@ tp.push(["setTags", array]);
 
 tp.push(["init", function(){
       if (tp.pianoId.isUserValid()) {
-        jQuery("#menu-item-5").hide(); //login
-        jQuery("#menu-item-7").hide(); //signup
+        jQuery("#menu-item-4").hide(); //login
+        jQuery("#menu-item-6").hide(); //signup
       } else {
-        jQuery("#menu-item-6").hide(); //logoutdsfs
+        jQuery("#menu-item-5").hide(); //logoutdsfs
       }
     }])
 
 
       tp.push(["init", function(){
-        document.getElementById('menu-item-5').onclick = function() {
+        document.getElementById('menu-item-4').onclick = function() {
           tp.pianoId.show({
             screen: 'login',
             displayMode: 'modal',
@@ -38,7 +38,7 @@ tp.push(["init", function(){
           }
         }])
         tp.push(["init", function(){
-          document.getElementById('menu-item-7').onclick = function() {
+          document.getElementById('menu-item-6').onclick = function() {
             tp.pianoId.show({
               screen: 'register',
               displayMode: 'modal',
@@ -50,7 +50,7 @@ tp.push(["init", function(){
           }])
 
         tp.push( ["init", function() {
-          document.getElementById('menu-item-6').onclick = function(){
+          document.getElementById('menu-item-5').onclick = function(){
             tp.pianoId.logout();
               location.reload();
             }
