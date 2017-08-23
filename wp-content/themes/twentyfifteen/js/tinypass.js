@@ -25,9 +25,7 @@ tp.push(["init", function(){
       }
     }])
 
-tp.push(["addHandler", "loginSuccess", function(){
-  console.log("testv2from wp");
-}])
+
 
       tp.push(["init", function(){
         document.getElementById('menu-item-4').onclick = function() {
