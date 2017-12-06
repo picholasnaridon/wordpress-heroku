@@ -7,6 +7,7 @@ tp = window.tp || [];
             var b = document.getElementsByTagName("script")[0];
             b.parentNode.insertBefore(a, b)
         })("//sandbox.tinypass.com/xbuilder/experience/load?aid=oiGmjC8JwK");
+
 array = []
 
 for (i = 0; i < php_vars.length; i++) {
@@ -23,36 +24,32 @@ tp.push(["init", function(){
       } else {
         jQuery("#menu-item-5").hide(); //logout
       }
-    }])
 
 
 
-      tp.push(["init", function(){
-        document.getElementById('menu-item-4').onclick = function() {
-          tp.pianoId.show({
-            screen: 'login',
-            displayMode: 'modal',
-            loggedIn: function(){
-                  location.reload();
-              }
-            })
-          }
-        }])
-        tp.push(["init", function(){
-          document.getElementById('menu-item-6').onclick = function() {
-            tp.pianoId.show({
-              screen: 'register',
-              displayMode: 'modal',
-              loggedIn: function(){
-                    location.reload();
-                }
-              })
-            }
-          }])
-
-        tp.push( ["init", function() {
-          document.getElementById('menu-item-5').onclick = function(){
-            tp.pianoId.logout();
+    document.getElementById('menu-item-4').onclick = function() {
+      tp.pianoId.show({
+        screen: 'login',
+        displayMode: 'modal',
+        loggedIn: function(){
               location.reload();
+          }
+        })
+      }
+
+      document.getElementById('menu-item-6').onclick = function() {
+        tp.pianoId.show({
+          screen: 'register',
+          displayMode: 'modal',
+          loggedIn: function(){
+                location.reload();
             }
-        }])
+          })
+        }
+
+
+      document.getElementById('menu-item-5').onclick = function(){
+        tp.pianoId.logout();
+          location.reload();
+        }
+    }])
